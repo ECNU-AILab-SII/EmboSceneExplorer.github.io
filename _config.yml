@@ -1,0 +1,53 @@
+# GitHub Pages 配置文件
+title: "EmboSceneExplorer"
+description: "Embodied Scene Explorer for Multimodal Perception and Navigation"
+url: "https://EmboSceneExplorer.github.io"
+baseurl: ""
+
+# 构建设置
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# 排除文件
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - .gitignore
+
+# 包含文件（确保这些文件被包含在构建中）
+include:
+  - _pages
+
+# 默认值
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+# SEO 设置
+author:
+  name: "EmboSceneExplorer Team"
+  email: "contact@embosceneexplorer.com"
+
+social:
+  name: "EmboSceneExplorer"
+  links:
+    - "https://github.com/ECNU-AILab-SII/EmboSceneExplorer"
+
+# Google Analytics（可选）
+# google_analytics: UA-XXXXXXXXX-X
